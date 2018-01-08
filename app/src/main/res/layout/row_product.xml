@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="165dp"
+    android:layout_height="165dp"
+    android:layout_margin="@dimen/space_5">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_black"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_5"
+            android:text="TTTTT"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_cart"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/view_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name"
+            android:layout_toLeftOf="@id/order_count"
+            android:drawableLeft="@drawable/ic_eye"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name"
+            android:drawableLeft="@drawable/ic_share"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font_size" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
